@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://www.mineservers.eu/sitemap.xml

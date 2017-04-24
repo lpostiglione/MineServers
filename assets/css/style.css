@@ -1,0 +1,697 @@
+/* 
+    Document   : MineServers.eu Stylesheets
+    Created on : 16.11.2012, 17:45:24
+    Author     : Luca Postiglione
+*/
+
+@font-face {
+    font-family:"Minecraft";
+    src:url("../fonts/minecraft.eot?") format("eot"),
+        url("../fonts/minecraft.woff") format("woff"),
+        url("../fonts/minecraft.ttf") format("truetype"),
+        url("../fonts/minecraft.svg#Minecraft") format("svg");
+    font-weight:normal;
+    font-style:normal;
+
+    font-family: 'Conv_Minecraftia';
+    src: url('../fonts/Minecraftia.eot');
+    src: local('☺'), url('../fonts/Minecraftia.woff') format('woff'), url('../fonts/Minecraftia.ttf') format('truetype'), url('../fonts/Minecraftia.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar-wrapper {
+    z-index:10;
+}
+
+.navbar .navbar-inner {
+    border:0;
+    -webkit-box-shadow:0 2px 10px rgba(0,0,0,.25);
+    -moz-box-shadow:0 2px 10px rgba(0,0,0,.25);
+    box-shadow:0 2px 10px rgba(0,0,0,.25);
+}
+
+.navbar .brand {
+    font-size:16px;
+    padding:14px 20px 16px;
+}
+
+.navbar .btn {
+    margin-top:5px!important;
+}
+
+.navbar button.btn-navbar {
+    margin-top: 10px !important;
+    margin-right: 10px;
+}
+
+.navbar .nav>li>a {
+    padding:15px 20px;
+}
+
+.navbar .nav>li.divider-vertical {
+    height: 50px;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom:30px;
+    background: url("../img/background_blur.jpg") no-repeat center top;
+}
+
+@media (max-width: 767px){
+    .header {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+.header-text, .header-text p, .header-text a {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.header-text h1,.header-text .lead {
+    line-height:1.25;
+    color:#fff;
+    text-shadow:0 1px 1px rgba(0,0,0,.4);
+    margin:0;
+}
+
+.navbar-search,
+.navbar .btn-navbar,
+.header-text .btn {
+    margin-top:10px;
+}
+
+.twitter-share-button {
+    width: 96px !important;
+    margin-right: 6px;
+}
+
+.gplusonebtn {
+    display:inline-block;
+    width:60px;
+    height:20px;
+    margin-right: 6px;
+    overflow:hidden;
+}
+
+.fblikebtn {
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+}
+
+.socials {
+    display: block;
+    height: 21px;
+    min-width: 200px;
+    float: right;
+    margin-bottom: -10px;
+}
+
+a.icnlink, a.icnlink:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+.placement img {
+    border-radius: 5px;
+    background: #EEE;
+}
+
+.placement h6, h6.thankyou {
+    font-size: 11px;
+    color: #999;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.placement {
+    width: 560px;
+    margin: 0 auto;
+}
+
+.thumbnail {
+    display: inline-block;
+}
+
+.footer {
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #777;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links li {
+    display: inline;
+    padding: 0 2px;
+}
+
+.footer-links li:first-child {
+    padding-left: 0;
+}
+
+.footer .row {
+    margin: 0;
+}
+
+.subservername {
+    font-style: italic;
+    color: #999;
+    font-size: 85%;
+}
+
+.serverdescription {
+    overflow-x: hidden;
+}
+
+ol.commentlist {
+    margin-bottom:30px;
+    list-style-type: none;
+}
+
+.the-comment {
+    margin-bottom:24px;
+}
+
+.avatar {
+    border:1px solid #CCC;
+    float:left;
+    margin-right:14px;
+}
+
+.comment-arrow {
+    background:url('../img/comment-arrow.png') no-repeat;
+    width:8px;
+    height:15px;
+    float:left;
+    margin-top:16px;
+    margin-right:-1px;
+}
+
+.comment-box {
+    background: #F8F8F8;
+    border:1px solid #CCC;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    overflow:hidden;
+    padding:14px;
+}
+
+.comment-text {
+    line-height:18px;
+}
+
+.comment-text-side {
+    color:#888;
+    font-style:italic;
+    line-height:18px;
+}
+
+.comment-author {
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+
+.comment-form {
+    float: right;
+    width: 87%;
+}
+
+.comment-form textarea {
+    resize: none;
+    width: 96%;
+    height: 100px;
+}
+
+.navbar-inner {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.statistics {
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+    margin: 90px 0 0 0;
+}
+
+.statistics li {
+    padding: 10px;
+    background: white;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #D4D4D4;
+    border-bottom: none;
+    float: left;
+    margin-right: 25px;
+}
+
+.servertable td, .vcenter td {
+    vertical-align: middle;
+}
+
+#recaptcha_response_field {
+    border: 1px solid #CCC !important;
+    width: 288px !important;
+    margin-bottom: 0px !important;
+}
+
+h1.servername {
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.page-header {
+    padding-bottom: 2px;
+    margin: 16px 0 16px;
+    border-bottom: 1px solid #EEE;
+}
+
+.gsc-control-cse .gsc-option-selector {
+    background: url('https://ssl.gstatic.com/ui/v1/zippy/arrow_down.png') center no-repeat !important;
+}
+
+.gsc-table-result {
+    border-collapse: separate !important;
+}
+
+.gs-title, .gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {
+    color: #08c !important;
+}
+
+.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
+    color: #999 !important;
+    font-style: italic !important;
+}
+
+img.gravatar {
+    border: 1px white solid;
+    margin: -4px 0;
+}
+
+.nolinebreak {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.lastcheck {
+    float: right;
+    margin-top: -12px;
+    margin-right: -2px;
+}
+
+.hiersolltewerbungstehen {
+    text-align: center;
+    margin: 0 auto;
+    background: #EEEEEE url('../img/adbg.png') no-repeat center;
+    width:468px;
+    height:60px;
+
+}
+
+.hiersolltewerbungstehen-lg {
+    text-align: center;
+    margin: 0 auto;
+    background: #EEEEEE url('../img/adbg.png') no-repeat center;
+    width:728px;
+    height:90px;
+
+}
+
+.notfound {
+    background: url('../img/error404.png') no-repeat top center;
+    min-height: 267px;
+    margin-bottom: 20px;
+}
+
+input, textarea, input:focus, textarea:focus, input[disabled], textarea[disabled], input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus, .btn {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.doubledot {
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 30px;
+    vertical-align: top;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.c0-font{
+    color: #000000;
+    text-shadow: 2px 2px 0px #000000;
+    filter: dropshadow(color=#000000, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+
+}
+
+.c1-font{
+    color: #2400B1;
+    text-shadow: 2px 2px 0px #03002C;
+    filter: dropshadow(color=#03002C, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.c2-font{
+    color: #40AD00;
+    text-shadow: 2px 2px 0px #0A2B00;
+    filter: dropshadow(color=#0A2B00, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.c3-font{
+    color: #47AAAA;
+    text-shadow: 2px 2px 0px #0B2A2A;
+    filter: dropshadow(color=#0B2A2A, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.c4-font{
+    color: #9E000F;
+    text-shadow: 2px 2px 0px #260001;
+    filter: dropshadow(color=#260001, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.c5-font{
+    color: #A000B1;
+    text-shadow: 2px 2px 0px #26002C;
+    filter: dropshadow(color=#26002C, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.c6-font{
+    color: #F3AD10;
+    text-shadow: 2px 2px 0px #292B00;
+    filter: dropshadow(color=#292B00, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.c7-font{
+    color: #AAAAAA;
+    text-shadow: 2px 2px 0px #2A2A2A;
+    filter: dropshadow(color=#2A2A2A, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.c8-font{
+    color: #555555;
+    text-shadow: 2px 2px 0px #151515;
+    filter: dropshadow(color=#151515, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.c9-font{
+    color: #5F40FF;
+    text-shadow: 2px 2px 0px #171042;
+    filter: dropshadow(color=#171042, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.ca-font{
+    color: #7CFF00;
+    text-shadow: 2px 2px 0px #1E400A;
+    filter: dropshadow(color=#1E400A, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.cb-font{
+    color: #84FFFE;
+    text-shadow: 2px 2px 0px #1F3F3F;
+    filter: dropshadow(color=#1F3F3F, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.cc-font{
+    color: #EF5556;
+    text-shadow: 2px 2px 0px #3A1415;
+    filter: dropshadow(color=#3A1415, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.cd-font{
+    color: #F140FF;
+    text-shadow: 2px 2px 0px #3B1041;
+    filter: dropshadow(color=#3B1041, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.ce-font{
+    color: #FBFF00;
+    text-shadow: 2px 2px 0px #3E4009;
+    filter: dropshadow(color=#3E4009, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.cf-font{
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0px #3F3F3F;
+    filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.cl-font{
+    font-weight: bold;
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.cm-font{
+    text-decoration: line-through;
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.cn-font{
+    text-decoration: underline;
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.co-font{
+    font-style: italic;
+    text-stroke: inherit;
+    -webkit-text-stroke: inherit;
+    text-rendering: inherit;
+}
+
+.motd {
+    font-family: 'Conv_Minecraftia', 'Minecraft', Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 16px;
+    background: #0E0A07 url('../img/motd.png') top left repeat;
+    color: #808080;
+    display: inline-block;
+    padding: 4px 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 0px #202020;
+    filter: dropshadow(color=#202020, offx=2, offy=2);
+    text-stroke: 1px transparent;
+    -webkit-text-stroke: 1px transparent;
+    text-rendering: optimizeSpeed;
+    text-rendering: geometricPrecision;
+}
+
+.ms-container{
+    background: transparent url('../img/switch.png') no-repeat center;
+    display: inline-block;
+}
+
+.ms-container:after{
+    content: "."; display: block; height: 0; line-height: 0; font-size: 0; clear: both; min-height: 0; visibility: hidden;
+}
+
+.ms-container .ms-selectable, .ms-container .ms-selection{
+
+    background: #fff;
+    color: #555555;
+    float: left;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.ms-container .ms-list{
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    border: 1px solid #ccc;
+}
+
+
+.ms-selected{
+    display:none;
+}
+.ms-container .ms-selectable{
+    margin-right: 40px;
+}
+
+.ms-container .ms-list.ms-focus{
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+}
+
+.ms-container ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.ms-container .ms-optgroup-container{
+    width: 100%;
+}
+
+.ms-container ul.ms-list{
+    width: 327px;
+    height: 300px;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.ms-container .ms-optgroup-label{
+    margin: 0;
+    padding: 5px 0px 0px 5px;
+    cursor: pointer;
+    color: #999;
+}
+
+.ms-container .ms-selectable li.ms-elem-selectable,
+.ms-container .ms-selection li.ms-elem-selection{
+    border-bottom: 1px #eee solid;
+    padding: 6px 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.ms-container .ms-selectable li.ms-hover,
+.ms-container .ms-selection li.ms-hover{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background-color: #08c;
+}
+
+.ms-container .ms-selectable li.disabled,
+.ms-container .ms-selection li.disabled{
+    background-color: #eee;
+    color: #aaa;
+    cursor: text;
+}
+
+.radio.inline, .checkbox.inline {
+    display: inline-block;
+    padding-top: 0;
+    margin-bottom: 0;
+    vertical-align: text-bottom;
+}
+
+.feature {
+    margin: 3px;
+    display: inline-block;
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    line-height: 10px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[class^="feature-"],[class*=" feature-"] {
+    background-image: url("../img/feature-icons.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    line-height: 14px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 16px;
+}
+
+.feature-axe-stone{ background-position: 0 0;  } 
+.feature-book{ background-position: 0 -18px;  } 
+.feature-boots-leather{ background-position: 0 -36px;  } 
+.feature-bow{ background-position: 0 -54px;  } 
+.feature-bricks{ background-position: 0 -72px;  } 
+.feature-bucket-lava{ background-position: 0 -90px;  } 
+.feature-chest{ background-position: 0 -108px;  } 
+.feature-cow{ background-position: 0 -126px;  } 
+.feature-disc{ background-position: 0 -144px;  } 
+.feature-emerald{ background-position: 0 -162px;  } 
+.feature-enchantment-table{ background-position: 0 -180px;  } 
+.feature-enderman{ background-position: 0 -198px;  } 
+.feature-enderpearl{ background-position: 0 -216px;  } 
+.feature-exp-orb{ background-position: 0 -234px;  } 
+.feature-eyeofender{ background-position: 0 -252px;  } 
+.feature-feather{ background-position: 0 -270px;  } 
+.feature-firecharge{ background-position: 0 -288px;  } 
+.feature-ftb{ background-position: 0 -306px;  } 
+.feature-gold-ingot{ background-position: 0 -324px;  } 
+.feature-hoe-iron{ background-position: 0 -342px;  } 
+.feature-pickaxe-diamond{ background-position: 0 -360px;  } 
+.feature-shovel-gold{ background-position: 0 -378px;  } 
+.feature-skeleton{ background-position: 0 -396px;  } 
+.feature-spawneregg{ background-position: 0 -414px;  } 
+.feature-spout{ background-position: 0 -432px;  } 
+.feature-sword-diamond{ background-position: 0 -450px;  } 
+.feature-sword-gold{ background-position: 0 -468px;  } 
+.feature-tekkit{ background-position: 0 -486px;  } 
+.feature-tnt{ background-position: 0 -504px;  } 
+.feature-zombie{ background-position: 0 -522px;  } 

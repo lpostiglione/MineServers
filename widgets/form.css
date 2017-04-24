@@ -1,0 +1,25 @@
+body, html {
+	background: transparent;
+}
+
+#recaptcha_response_field {
+    border: 1px solid #CCC !important;
+    width: 288px !important;
+    margin-bottom: 0px !important;
+}
+
+#recaptcha_logo {
+	display: none;
+}
+
+form {
+	margin: 0;
+}
+
+.recaptchatable .recaptcha_image_cell {
+	background-color: transparent !important;
+}
+
+.recaptchatable {
+background: white !important;
+}
